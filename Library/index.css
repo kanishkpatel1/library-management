@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sora:wght@200&display=swap');
+
+*{
+    top:0;
+    left:0;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Sora', sans-serif;
+  }
+  
+  .accmain{
+    margin-top: 90px;
+    margin-left: 35%;
+    width: 45%;
+  }
+  .nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height:64px;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
+    background-color: #fff;
+    z-index: 10;
+    
+  }
+  .nav .li{
+    display: flex;
+    margin-left:20px;
+
+  }
+  .nav .li a{
+    display: block;
+    margin-right:10px;
+    border-radius: 20px;
+    background-color: #24A0ED;
+  }
+  .nav .name{
+    font-family: 'Dancing Script', cursive;
+    margin-right:50px;
+    font-size: 26px;
+  }
+  
+  .accmain .accques{
+    margin-bottom: 20px;
+  }
+  /* .accmain .accques .ques button  */
+  .logback{
+    position: absolute;
+    padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top,#edafaa,#24A0ED);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logback .box{
+    padding:20px 30px 30px 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fff;
+    box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.3);
+    border-radius: 9px;
+  }
+  .logback .box .logname{
+    font-size: 70px;
+  }
+  .logback .box .logname i{
+    color:#24A0ED;
+  }
+  .logback .box .linput{
+    margin-top:20px;
+  }
+  .logback .box form .rad{
+    color: #24A0ED;
+    margin-bottom: 20px;
+    margin-top: 13px;
+  }
+  .logback .box form button{
+    border:0px;
+    background-color: #24A0ED;
+    color:#fff;
+    padding:10px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  .logback .box .linput{
+    position: relative;
+    padding:10px;
+  }
+  .logback .box .linput input{
+    padding: 6px 6px 6px 35px;
+    outline: none;
+    border-width:0px 0px 2px 0px;
+    border-color: #24A0ED;
+    border-style: solid;
+    font-weight: 600;
+    width:260px;
+    font-size: 15px;
+  }
+  .logback .box form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logback .box form .linput i{
+    position: absolute;
+    top:17px;
+    left:15px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    color: #24A0ED;
+  }
+  .parent{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      height:100%;
+      background-image: url(back.jpg);
+      background-repeat:no-repeat;
+      background-size: cover;
+  }
+
+  .parent .libbox .grid{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .parent .libbox{
+    position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding:10px 80px 10px;  
+      width:55%;
+      height:50%;
+      box-shadow: 1px 2px 15px 3px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      background-color: #fff;
+      
+  }
+  .parent .libbox .grid .ran{
+        cursor: pointer;
+        padding:10px;
+        text-align: center;
+        background-color: #24A0ED;
+        margin-bottom: 10px;
+        color:#fff;
+        font-weight: 600;
+        border-radius: 9px;
+        margin-top: 8px;
+  }
+  .parent .libbox .grid i{
+    color: #24A0ED;
+    font-size: 80px;
+
+  }
+  .parent .libbox .grid #fun2{
+    cursor: pointer;
+    padding:10px;
+    text-align: center;
+    background-color: #24A0ED;
+    margin-bottom: 10px;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 9px;
+    margin-top: 8px;
+}
+.parent .libbox .grid .ran1{
+    cursor: pointer;
+    padding:10px;
+    text-align: center;
+    background-color: #24A0ED;
+    margin-bottom: 10px;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 9px;
+    margin-top: 8px;
+}
+.parent .libbox .grid #fun4{
+    cursor: pointer;
+    padding:10px;
+    text-align: center;
+    background-color: #24A0ED;
+    margin-bottom: 10px;
+    color:#fff;
+    font-weight: 600;
+    border-radius: 9px;
+    margin-top: 8px;
+}
+.parent .bookdailog{
+  position: absolute;
+  background-color: #fff;
+  z-index: 10px;
+  top:20%;
+  left:28%;
+  width:40%;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: top 0s 0.2s ease-in-out,
+              opacity 0.2s 0s ease-in-out,
+              top 0.2s 0s ease-in-out;
+}
+.bookdailog.add{
+  opacity: 1;
+  pointer-events:auto;
+}
+.parent .bookdailog .bookentry{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  height: 60%;
+}
+.parent .bookdailog .bookentry div{
+  width: 100%;
+  text-align: center;
+  margin-top:14px;
+}
+.parent .bookdailog .bookentry div label{
+  font-weight: 600;
+  color: #24A0ED;
+}
+
+.parent .bookdailog .bookhead{
+  background-color: #24A0ED;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+.parent .bookdailog .booksub{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:20%;
+}
+.parent .bookdailog .booksub input{
+  padding:10px;
+  font-size: 16px;
+  outline: none;
+  border-width: 0px ;
+  background-color: #24A0ED;
+  color: #fff;
+  margin: 10px 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.parent .bookdailog .bookentry input{
+  background-color: #fff;
+  padding:10px 7px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  width:60%;
+  outline: none;
+  border: 1px solid #24A0ED; 
+  margin-left: 10px; 
+  cursor: pointer;
+}
+.parent .entrydailog{
+  position: absolute;
+  background-color: #fff;
+  z-index: 10px;
+  top:20%;
+  left:28%;
+  padding-bottom: 10px;
+  width:40%;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: top 0s 0.2s ease-in-out,
+              opacity 0.2s 0s ease-in-out,
+              top 0.2s 0s ease-in-out;
+  margin-bottom: 70px;
+}
+.entrydailog.show{
+  opacity: 1;
+  pointer-events:auto;
+}
+.parent .entrydailog .bookentry{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  height: 60%;
+}
+.parent .entrydailog .bookentry div{
+  width: 100%;
+  text-align: center;
+  margin-top:14px;
+}
+.parent .entrydailog .bookentry div label{
+  font-weight: 600;
+  color: #24A0ED;
+}
+.parent .entrydailog .bookentry div select{
+  background-color: #fff;
+  padding:5px 4px 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  width:60%;
+  outline: none;
+  border: 1px solid #24A0ED; 
+  margin-left: 10px; 
+  cursor: pointer;
+}
+
+.parent .entrydailog .bookhead{
+  background-color: #24A0ED;
+  font-weight: 600;
+  height:20%;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px;
+  color: #fff;
+}
+.parent .entrydailog .booksub{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+  height:20%;
+}
+.parent .entrydailog .booksub input{
+  padding:10px;
+  font-size: 16px;
+  outline: none;
+  border-width: 0px ;
+  background-color: #24A0ED;
+  color: #fff;
+  margin: 0px 10px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.parent .entrydailog .bookentry input{
+  background-color: #fff;
+  padding:10px 7px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  width:60%;
+  outline: none;
+  border: 1px solid #24A0ED; 
+  margin-left: 10px; 
+  cursor: pointer;
+}
+.parent .bookdailog .rancancel{
+  width:15%;
+  margin: auto;
+  padding:7px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #24A0ED;
+  border-width: 0px;
+  color: #fff;
+  font-size: 16px;
+}
+.parent .entrydailog .rancancel1{
+  width:15%;
+  padding:7px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background-color: #24A0ED;
+  border-width: 0px;
+  font-size: 16px;
+}
+.parent .stubox{
+      position: relative;
+      display:flex;
+      flex-direction: column;
+      padding:20px;
+      height:500px;
+      box-shadow: 1px 2px 15px 3px rgba(0,0,0,0.3);
+      border-radius: 12px;
+      background-color: #fff;
+      overflow: scroll;
+}
+.parent .stubox .listhead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #24A0ED;
+  color: #fff;
+  padding:20px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.parent .stubox table tbody{
+  overflow: scroll;
+}
